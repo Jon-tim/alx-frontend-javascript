@@ -6,5 +6,5 @@ export default async function asyncUploadUser() {
   if (photo && user) {
     return { photo, user };
   }
-  return { photo: null, user: null }
+  return { photo: null, user: null };
 }
