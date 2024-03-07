@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable no-underscore-dangle */
 export default class HolbertonCourse {
   constructor(name, length, students) {
     this.name = name;
@@ -41,4 +41,3 @@ export default class HolbertonCourse {
     this._students = students;
   }
 }
-
