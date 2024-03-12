@@ -1,8 +1,8 @@
 export default function cleanSet(set, startString) {
   const stringsArray = [];
-  if (startString === '') return '';
+  if (!startString || typeof startString !== 'string') return '';
   for (const item of set) {
-    if (item.startsWith(startString)) {
+    if (typeof item === 'string' && item.startsWith(startString)) {
       stringsArray.push(item);
     }
   }
